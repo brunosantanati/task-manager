@@ -1,10 +1,17 @@
 // CRUD create read update delete
 
-const mongodb = require('mongodb')
-const MongoClient = mongodb.MongoClient
+const { MongoClient, ObjectID } = require('mongodb')
 
 const connectionUrl = 'mongodb://127.0.0.1:27017'
 const databaseName = 'task-manager'
+
+const id = new ObjectID()
+console.log(id)
+console.log(id.getTimestamp())
+console.log(id.id)
+console.log(id.id.length)
+console.log(id.toHexString())
+console.log(id.toHexString().length)
 
 MongoClient.connect(connectionUrl, { useNewUrlParser: true }, (error, client) => {
     if(error){
@@ -13,6 +20,7 @@ MongoClient.connect(connectionUrl, { useNewUrlParser: true }, (error, client) =>
 
     const db = client.db(databaseName)
     db.collection('users').insertOne({
+        _id: id,
         name: 'Bruno',
         age: 33
     }, (error, result) => {
