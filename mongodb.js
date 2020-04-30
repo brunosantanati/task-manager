@@ -20,7 +20,36 @@ MongoClient.connect(connectionUrl, { useNewUrlParser: true }, (error, client) =>
 
     const db = client.db(databaseName)
 
-    let searchCriteria = { _id: new ObjectID('5e9929b72a83056d12fb9026') }
+    //UPDATE
+    db.collection('users').updateOne({
+        _id: new ObjectID("5e9a6d2f47f59735e39b2779")
+    }, {
+        // $set: {
+        //     name: 'Mike'
+        // }
+        $inc: {
+            age: 1
+        }
+    }).then((result) => {
+        console.log(result)
+    }).catch((error) => {
+        console.log(error)
+    })
+
+    db.collection('tasks').updateMany({
+        completed: false
+    }, {
+        $set: {
+            completed: true
+        }
+    }).then((result) => {
+        console.log(result.modifiedCount)
+    }).catch((error) => {
+        console.log(error)
+    })
+
+    //READ
+    /*let searchCriteria = { _id: new ObjectID('5e9929b72a83056d12fb9026') }
     //searchCriteria = { name: 'Jen', age: 1 }
     //searchCriteria = { name: 'Jen' }
 
@@ -46,8 +75,9 @@ MongoClient.connect(connectionUrl, { useNewUrlParser: true }, (error, client) =>
 
     db.collection('tasks').find({ completed: false }).toArray((error, tasks) => {
         console.log(tasks)
-    })
+    })*/
 
+    //CREATE
     /*db.collection('users').insertOne({
         _id: id,
         name: 'Bruno',
