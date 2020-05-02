@@ -20,8 +20,25 @@ MongoClient.connect(connectionUrl, { useNewUrlParser: true }, (error, client) =>
 
     const db = client.db(databaseName)
 
+    db.collection('tasks').deleteOne({
+        //_id: new ObjectID("5e9929b72a83056d12fb902b")
+        description: "Learn Golang"
+    }).then((result) => {
+        console.log(result)
+    }).catch((error) => {
+        console.log(error)
+    })
+
+    db.collection('users').deleteMany({
+        age: 27
+    }).then((result) => {
+        console.log(result)
+    }).catch((error) => {
+        console.log(error)
+    })
+
     //UPDATE
-    db.collection('users').updateOne({
+    /*db.collection('users').updateOne({
         _id: new ObjectID("5e9a6d2f47f59735e39b2779")
     }, {
         // $set: {
@@ -46,7 +63,7 @@ MongoClient.connect(connectionUrl, { useNewUrlParser: true }, (error, client) =>
         console.log(result.modifiedCount)
     }).catch((error) => {
         console.log(error)
-    })
+    })*/
 
     //READ
     /*let searchCriteria = { _id: new ObjectID('5e9929b72a83056d12fb9026') }
