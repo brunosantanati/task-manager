@@ -1,7 +1,7 @@
 ## Make sure to use the right version
 
-<code>nvm install 11.0.0<code>  
-<code>nvm use 11.0.0<code>  
+<code>nvm install 11.0.0</code>  
+<code>nvm use 11.0.0</code>  
 
 ## Used commands
 
