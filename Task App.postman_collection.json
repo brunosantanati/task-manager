@@ -59,6 +59,43 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Read users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/users",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/users/63781d1ce250e875aff24b18",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"63781d1ce250e875aff24b18"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
