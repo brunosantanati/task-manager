@@ -26,6 +26,9 @@ cd ~/any-path-here/MongoDB/mongodb-linux-x86_64-ubuntu1604-3.6.3/bin
 <code>npm i express@4.16.4</code>  
 <code>npm run dev</code>  
 
+<code>node playground/promise-chaining.js</code>  
+<code>node playground/promise-chaining-2.js</code>  
+
 ## Mongoose links
 
 [Queries](https://mongoosejs.com/docs/queries.html)
