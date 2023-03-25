@@ -208,6 +208,25 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Delete task",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/tasks/641e088607f7c0e2d7512eae",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tasks",
+						"641e088607f7c0e2d7512eae"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
