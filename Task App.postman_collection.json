@@ -121,14 +121,42 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:3000/tasks/637cd5ea66c44ca30b188e4f",
+					"raw": "localhost:3000/tasks/641e073c496377e0fa9903c2",
 					"host": [
 						"localhost"
 					],
 					"port": "3000",
 					"path": [
 						"tasks",
-						"637cd5ea66c44ca30b188e4f"
+						"641e073c496377e0fa9903c2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update user",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Bruno\",\n    \"email\": \"bruno.santana@evangelico.com\",\n    \"password\": \"bruno123456789\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/users/641e01d230c73edad7bade29",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"641e01d230c73edad7bade29"
 					]
 				}
 			},
