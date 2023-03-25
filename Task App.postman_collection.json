@@ -161,6 +161,34 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Update task",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"description\": \"Finish Go course\",\n    \"completed\": true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/tasks/637cd1c1706b3c9f4a9a7afb",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tasks",
+						"637cd1c1706b3c9f4a9a7afb"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
