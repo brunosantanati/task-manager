@@ -1,6 +1,5 @@
 const mongoose = require('mongoose')
 const validator = require('validator')
-const { __esModule } = require('validator/lib/isAlpha')
 
 const User = mongoose.model('User', {
     name: {
