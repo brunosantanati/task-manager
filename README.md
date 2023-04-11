@@ -1,7 +1,7 @@
 ## Make sure to use the right version
 
 <code>nvm install 11.0.0</code>  
-<code>nvm use 11.0.0</code>  
+<code>nvm use 11.0.0</code>
 
 ## Mongo installation and basic usage
 
@@ -15,7 +15,7 @@ cd ~/any-path-here/MongoDB/mongodb-linux-x86_64-ubuntu1604-3.6.3/bin
 5-Open another terminal (in bin folder as well) and start the Mongo Shell:
 cd ~/any-path-here/MongoDB/mongodb-linux-x86_64-ubuntu1604-3.6.3/bin
 ./mongo
-```  
+```
 
 ## Used commands
 
@@ -24,11 +24,17 @@ cd ~/any-path-here/MongoDB/mongodb-linux-x86_64-ubuntu1604-3.6.3/bin
 <code>node src/db/mongoose.js</code>  
 <code>npm i nodemon@1.18.9 --save-dev</code>  
 <code>npm i express@4.16.4</code>  
-<code>npm run dev</code>  
+<code>npm i bcryptjs@2.4.3</code>  
+<code>npm run dev</code>
 
 <code>node playground/promise-chaining.js</code>  
-<code>node playground/promise-chaining-2.js</code>  
+<code>node playground/promise-chaining-2.js</code>
 
 ## Mongoose links
 
 [Queries](https://mongoosejs.com/docs/queries.html)
+[Middleware](https://mongoosejs.com/docs/middleware.html)
+
+## Other links
+
+[bcrypt.js](https://www.npmjs.com/package/bcryptjs)
