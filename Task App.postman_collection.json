@@ -34,6 +34,34 @@
 			"response": []
 		},
 		{
+			"name": "Login user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"bruno.santana@brs.com\",\n    \"password\": \"bruno123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/users/login",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "Create task",
 			"request": {
 				"method": "POST",
@@ -84,14 +112,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:3000/users/63781d1ce250e875aff24b18",
+					"raw": "localhost:3000/users/641e01d230c73edad7bade29",
 					"host": [
 						"localhost"
 					],
 					"port": "3000",
 					"path": [
 						"users",
-						"63781d1ce250e875aff24b18"
+						"641e01d230c73edad7bade29"
 					]
 				}
 			},
@@ -141,7 +169,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"name\": \"Bruno\",\n    \"email\": \"bruno.santana@evangelico.com\",\n    \"password\": \"bruno123456789\"\n}",
+					"raw": "{\n    \"name\": \"Bruno\",\n    \"email\": \"bruno.santana@evangelico.com\",\n    \"password\": \"bruno123456789!!\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -149,14 +177,14 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:3000/users/641e01d230c73edad7bade29",
+					"raw": "localhost:3000/users/643502a673179abf85a80a9f",
 					"host": [
 						"localhost"
 					],
 					"port": "3000",
 					"path": [
 						"users",
-						"641e01d230c73edad7bade29"
+						"643502a673179abf85a80a9f"
 					]
 				}
 			},
@@ -169,7 +197,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"description\": \"Finish Go course\",\n    \"completed\": true\n}",
+					"raw": "{\n    \"description\": \"Finish Go course\",\n    \"completed\": false\n}",
 					"options": {
 						"raw": {
 							"language": "json"
