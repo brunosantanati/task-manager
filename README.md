@@ -32,9 +32,9 @@ cd ~/any-path-here/MongoDB/mongodb-linux-x86_64-ubuntu1604-3.6.3/bin
 
 ## Mongoose links
 
-[Queries](https://mongoosejs.com/docs/queries.html)
-[Middleware](https://mongoosejs.com/docs/middleware.html)
+[Queries](https://mongoosejs.com/docs/queries.html)  
+[Middleware](https://mongoosejs.com/docs/middleware.html)  
 
 ## Other links
 
-[bcrypt.js](https://www.npmjs.com/package/bcryptjs)
+[bcrypt.js](https://www.npmjs.com/package/bcryptjs)  
