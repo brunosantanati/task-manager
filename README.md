@@ -25,6 +25,7 @@ cd ~/any-path-here/MongoDB/mongodb-linux-x86_64-ubuntu1604-3.6.3/bin
 <code>npm i nodemon@1.18.9 --save-dev</code>  
 <code>npm i express@4.16.4</code>  
 <code>npm i bcryptjs@2.4.3</code>  
+<code>npm i jsonwebtoken@8.4.0</code>  
 <code>npm run dev</code>
 
 <code>node playground/promise-chaining.js</code>  
@@ -38,3 +39,4 @@ cd ~/any-path-here/MongoDB/mongodb-linux-x86_64-ubuntu1604-3.6.3/bin
 ## Other links
 
 [bcrypt.js](https://www.npmjs.com/package/bcryptjs)  
+[jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken)  
