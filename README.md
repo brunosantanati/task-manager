@@ -1,7 +1,14 @@
 ## Make sure to use the right version
 
 <code>nvm install 11.0.0</code>  
-<code>nvm use 11.0.0</code>
+<code>nvm use 11.0.0</code>  
+
+I started getting this error when trying to run the application using Node v11.0.0:  
+<code>Segmentation fault (core dumped)</code>  
+So, I found the closest LTS version and used it instead:  
+<code>nvm ls-remote --lts</code>  
+<code>nvm install v12.13.0</code>  
+<code>nvm use v12.13.0</code>  
 
 ## Mongo installation and basic usage
 
