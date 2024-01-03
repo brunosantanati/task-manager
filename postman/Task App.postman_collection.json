@@ -13,7 +13,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"name\": \"Bruno\",\n    \"email\": \"bruno.santana@brs.com\",\n    \"password\": \"bruno123\"\n}",
+					"raw": "{\n    \"name\": \"Bruno\",\n    \"email\": \"bruno.santana2@brs.com\",\n    \"password\": \"bruno123\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -89,18 +89,25 @@
 			"response": []
 		},
 		{
-			"name": "Read users",
+			"name": "Read profile",
 			"request": {
 				"method": "GET",
-				"header": [],
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDM1MGEwODljNDk5MGM2ZTE1MDlhMTQiLCJpYXQiOjE3MDQyNTg2NTB9.pOqrGxOTDAWW27Uu-htb21gnuWxK6efEiPFNK_4UaK4",
+						"type": "text"
+					}
+				],
 				"url": {
-					"raw": "localhost:3000/users",
+					"raw": "localhost:3000/users/me",
 					"host": [
 						"localhost"
 					],
 					"port": "3000",
 					"path": [
-						"users"
+						"users",
+						"me"
 					]
 				}
 			},
