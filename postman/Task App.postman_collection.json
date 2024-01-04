@@ -8,12 +8,28 @@
 	"item": [
 		{
 			"name": "Create user",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"if (pm.response.code === 201) {",
+							"    pm.environment.set('authToken', pm.response.json().token)",
+							"}"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
+				"auth": {
+					"type": "noauth"
+				},
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"name\": \"Bruno\",\n    \"email\": \"bruno.santana2@brs.com\",\n    \"password\": \"bruno123\"\n}",
+					"raw": "{\n    \"name\": \"Bruno\",\n    \"email\": \"bruno.santana2@brss.com\",\n    \"password\": \"bruno123\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -21,11 +37,10 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:3000/users",
+					"raw": "{{url}}/users",
 					"host": [
-						"localhost"
+						"{{url}}"
 					],
-					"port": "3000",
 					"path": [
 						"users"
 					]
@@ -35,7 +50,23 @@
 		},
 		{
 			"name": "Login user",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"if (pm.response.code === 200) {",
+							"    pm.environment.set('authToken', pm.response.json().token)",
+							"}"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
+				"auth": {
+					"type": "noauth"
+				},
 				"method": "POST",
 				"header": [],
 				"body": {
@@ -48,11 +79,10 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:3000/users/login",
+					"raw": "{{url}}/users/login",
 					"host": [
-						"localhost"
+						"{{url}}"
 					],
-					"port": "3000",
 					"path": [
 						"users",
 						"login"
@@ -76,11 +106,10 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:3000/tasks",
+					"raw": "{{url}}/tasks",
 					"host": [
-						"localhost"
+						"{{url}}"
 					],
-					"port": "3000",
 					"path": [
 						"tasks"
 					]
@@ -92,19 +121,12 @@
 			"name": "Read profile",
 			"request": {
 				"method": "GET",
-				"header": [
-					{
-						"key": "Authorization",
-						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDM1MGEwODljNDk5MGM2ZTE1MDlhMTQiLCJpYXQiOjE3MDQyNTg2NTB9.pOqrGxOTDAWW27Uu-htb21gnuWxK6efEiPFNK_4UaK4",
-						"type": "text"
-					}
-				],
+				"header": [],
 				"url": {
-					"raw": "localhost:3000/users/me",
+					"raw": "{{url}}/users/me",
 					"host": [
-						"localhost"
+						"{{url}}"
 					],
-					"port": "3000",
 					"path": [
 						"users",
 						"me"
@@ -119,11 +141,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:3000/users/641e01d230c73edad7bade29",
+					"raw": "{{url}}/users/641e01d230c73edad7bade29",
 					"host": [
-						"localhost"
+						"{{url}}"
 					],
-					"port": "3000",
 					"path": [
 						"users",
 						"641e01d230c73edad7bade29"
@@ -138,11 +159,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:3000/tasks",
+					"raw": "{{url}}/tasks",
 					"host": [
-						"localhost"
+						"{{url}}"
 					],
-					"port": "3000",
 					"path": [
 						"tasks"
 					]
@@ -156,11 +176,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:3000/tasks/641e073c496377e0fa9903c2",
+					"raw": "{{url}}/tasks/641e073c496377e0fa9903c2",
 					"host": [
-						"localhost"
+						"{{url}}"
 					],
-					"port": "3000",
 					"path": [
 						"tasks",
 						"641e073c496377e0fa9903c2"
@@ -184,11 +203,10 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:3000/users/643502a673179abf85a80a9f",
+					"raw": "{{url}}/users/643502a673179abf85a80a9f",
 					"host": [
-						"localhost"
+						"{{url}}"
 					],
-					"port": "3000",
 					"path": [
 						"users",
 						"643502a673179abf85a80a9f"
@@ -212,11 +230,10 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:3000/tasks/637cd1c1706b3c9f4a9a7afb",
+					"raw": "{{url}}/tasks/637cd1c1706b3c9f4a9a7afb",
 					"host": [
-						"localhost"
+						"{{url}}"
 					],
-					"port": "3000",
 					"path": [
 						"tasks",
 						"637cd1c1706b3c9f4a9a7afb"
@@ -231,11 +248,10 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "localhost:3000/users/63781d1ce250e875aff24b18",
+					"raw": "{{url}}/users/63781d1ce250e875aff24b18",
 					"host": [
-						"localhost"
+						"{{url}}"
 					],
-					"port": "3000",
 					"path": [
 						"users",
 						"63781d1ce250e875aff24b18"
@@ -250,11 +266,10 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "localhost:3000/tasks/641e088607f7c0e2d7512eae",
+					"raw": "{{url}}/tasks/641e088607f7c0e2d7512eae",
 					"host": [
-						"localhost"
+						"{{url}}"
 					],
-					"port": "3000",
 					"path": [
 						"tasks",
 						"641e088607f7c0e2d7512eae"
@@ -262,6 +277,36 @@
 				}
 			},
 			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{authToken}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
 		}
 	]
 }
