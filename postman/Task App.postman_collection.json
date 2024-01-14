@@ -29,7 +29,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"name\": \"Bruno\",\n    \"email\": \"bruno.santana2@brss.com\",\n    \"password\": \"bruno123\"\n}",
+					"raw": "{\n    \"name\": \"Bruno\",\n    \"email\": \"bruno.santana.ti@gmail.com\",\n    \"password\": \"bruno12345\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -71,7 +71,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"email\": \"bruno.santana@brs.com\",\n    \"password\": \"bruno123\"\n}",
+					"raw": "{\n    \"email\": \"bruno.santana.ti@evangelico.com\",\n    \"password\": \"bruno12345\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -172,24 +172,6 @@
 			"response": []
 		},
 		{
-			"name": "Read user",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "{{url}}/users/641e01d230c73edad7bade29",
-					"host": [
-						"{{url}}"
-					],
-					"path": [
-						"users",
-						"641e01d230c73edad7bade29"
-					]
-				}
-			},
-			"response": []
-		},
-		{
 			"name": "Read tasks",
 			"request": {
 				"method": "GET",
@@ -231,7 +213,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"name\": \"Bruno\",\n    \"email\": \"bruno.santana@evangelico.com\",\n    \"password\": \"bruno123456789!!\"\n}",
+					"raw": "{\n    \"name\": \"Bruno\",\n    \"email\": \"bruno.santana.ti@evangelico.com\",\n    \"password\": \"bruno12345\",\n    \"age\": 47\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -239,13 +221,13 @@
 					}
 				},
 				"url": {
-					"raw": "{{url}}/users/643502a673179abf85a80a9f",
+					"raw": "{{url}}/users/me",
 					"host": [
 						"{{url}}"
 					],
 					"path": [
 						"users",
-						"643502a673179abf85a80a9f"
+						"me"
 					]
 				}
 			},
@@ -284,13 +266,13 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{url}}/users/63781d1ce250e875aff24b18",
+					"raw": "{{url}}/users/me",
 					"host": [
 						"{{url}}"
 					],
 					"path": [
 						"users",
-						"63781d1ce250e875aff24b18"
+						"me"
 					]
 				}
 			},
