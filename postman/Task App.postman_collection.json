@@ -71,7 +71,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"email\": \"bruno.santana.ti@evangelico.com\",\n    \"password\": \"bruno12345\"\n}",
+					"raw": "{\n    \"email\": \"bruno.santana.ti@gmail.com\",\n    \"password\": \"bruno12345\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -134,7 +134,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"description\": \"Finish Node.js course\"\n}",
+					"raw": "{\n    \"description\": \"Finish REST Assured course\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -194,13 +194,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{url}}/tasks/641e073c496377e0fa9903c2",
+					"raw": "{{url}}/tasks/65a4c89758f98fc8589a68e0",
 					"host": [
 						"{{url}}"
 					],
 					"path": [
 						"tasks",
-						"641e073c496377e0fa9903c2"
+						"65a4c89758f98fc8589a68e0"
 					]
 				}
 			},
@@ -240,7 +240,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"description\": \"Finish Go course\",\n    \"completed\": false\n}",
+					"raw": "{\n    \"description\": \"Finish Go course\",\n    \"completed\": true\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -248,13 +248,13 @@
 					}
 				},
 				"url": {
-					"raw": "{{url}}/tasks/637cd1c1706b3c9f4a9a7afb",
+					"raw": "{{url}}/tasks/65a4a305d8f2dfbc181fbf91",
 					"host": [
 						"{{url}}"
 					],
 					"path": [
 						"tasks",
-						"637cd1c1706b3c9f4a9a7afb"
+						"65a4a305d8f2dfbc181fbf91"
 					]
 				}
 			},
@@ -284,13 +284,13 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{url}}/tasks/641e088607f7c0e2d7512eae",
+					"raw": "{{url}}/tasks/65a4a7723f828dc34ce0376f",
 					"host": [
 						"{{url}}"
 					],
 					"path": [
 						"tasks",
-						"641e088607f7c0e2d7512eae"
+						"65a4a7723f828dc34ce0376f"
 					]
 				}
 			},
