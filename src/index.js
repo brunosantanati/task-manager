@@ -27,6 +27,7 @@ app.listen(port, () => {
     console.log('Server is up on port ' + port)
 })
 
+// ############### Json Web Token test
 /*const jwt = require("jsonwebtoken")
 
 const myFunction = async () => {
@@ -39,6 +40,7 @@ const myFunction = async () => {
 
 myFunction()*/
 
+// ############### toJSON test
 /*const pet = {
   name: 'Hal'
 }
@@ -48,3 +50,19 @@ pet.toJSON = function () {
 }
 
 console.log(JSON.stringify(pet))*/
+
+// ############### User/Task Relationship test
+/*const Task = require('./models/task')
+const User = require('./models/user')
+
+const main = async () => {
+  //const task = await Task.findById('65a4a305d8f2dfbc181fbf91')
+  //await task.populate('owner').execPopulate()
+  //console.log(task.owner)
+
+  const user = await User.findById('65a49f5f11aa1bb91ca79fe4')
+  await user.populate('tasks').execPopulate()
+  console.log(user.tasks)
+}
+
+main()*/
