@@ -134,7 +134,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"description\": \"Finish REST Assured course\"\n}",
+					"raw": "{\n    \"description\": \"Finish Node.js course 4\",\n    \"completed\": false\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -177,12 +177,30 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{url}}/tasks",
+					"raw": "{{url}}/tasks?completed=false&limit=2&skip=0&sortBy=createdAt:desc",
 					"host": [
 						"{{url}}"
 					],
 					"path": [
 						"tasks"
+					],
+					"query": [
+						{
+							"key": "completed",
+							"value": "false"
+						},
+						{
+							"key": "limit",
+							"value": "2"
+						},
+						{
+							"key": "skip",
+							"value": "0"
+						},
+						{
+							"key": "sortBy",
+							"value": "createdAt:desc"
+						}
 					]
 				}
 			},
@@ -240,7 +258,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"description\": \"Finish Go course\",\n    \"completed\": true\n}",
+					"raw": "{\n    \"completed\": true\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -248,13 +266,13 @@
 					}
 				},
 				"url": {
-					"raw": "{{url}}/tasks/65a4a305d8f2dfbc181fbf91",
+					"raw": "{{url}}/tasks/65a6bb75b3a528da0d71b3b6",
 					"host": [
 						"{{url}}"
 					],
 					"path": [
 						"tasks",
-						"65a4a305d8f2dfbc181fbf91"
+						"65a6bb75b3a528da0d71b3b6"
 					]
 				}
 			},
