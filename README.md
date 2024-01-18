@@ -27,16 +27,25 @@ cd ~/any-path-here/MongoDB/mongodb-linux-x86_64-ubuntu1604-3.6.3/bin
 ## Used commands
 
 <code>npm install</code>  
+
+In the mongo/bin folder you can run these 2 commands below:  
 <code>./mongod --dbpath=/path/to/mongodb-data-folder/</code>  
+<code>./mongo</code>  
+
 <code>node src/db/mongoose.js</code>  
 <code>npm i nodemon@1.18.9 --save-dev</code>  
 <code>npm i express@4.16.4</code>  
 <code>npm i bcryptjs@2.4.3</code>  
 <code>npm i jsonwebtoken@8.4.0</code>  
+<code>npm i multer@1.4.1</code>  
 <code>npm run dev</code>
 
 <code>node playground/promise-chaining.js</code>  
-<code>node playground/promise-chaining-2.js</code>
+<code>node playground/promise-chaining-2.js</code>  
+
+## Course links
+
+[images for upload](https://links.mead.io/files) ([the same as this](https://files.mead.io/5c64e8f75ffe))    
 
 ## Mongoose links
 
@@ -47,3 +56,4 @@ cd ~/any-path-here/MongoDB/mongodb-linux-x86_64-ubuntu1604-3.6.3/bin
 
 [bcrypt.js](https://www.npmjs.com/package/bcryptjs)  
 [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken)  
+[multer (file upload)](https://www.npmjs.com/package/multer)  
