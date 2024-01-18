@@ -20,7 +20,7 @@
 								{
 									"key": "upload",
 									"type": "file",
-									"src": "/home/bruno/Documents/node/task-manager/node-course-images/philly.jpg"
+									"src": "/home/bruno/Documents/node/task-manager/node-course-images/sample-pdf-file.pdf"
 								}
 							]
 						},
@@ -362,6 +362,25 @@
 						}
 					]
 				},
+				"url": {
+					"raw": "{{url}}/users/me/avatar",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"users",
+						"me",
+						"avatar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete avatar",
+			"request": {
+				"method": "DELETE",
+				"header": [],
 				"url": {
 					"raw": "{{url}}/users/me/avatar",
 					"host": [
