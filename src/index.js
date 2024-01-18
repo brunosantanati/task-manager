@@ -21,13 +21,28 @@ app.use((req, res, next) => {
 })*/
 
 // ############### Multer test/example
-/*const multer = require('multer')
+const multer = require('multer')
 const upload = multer({
-  dest: 'images'
+  dest: 'images',
+  limits: {
+    fileSize: 1000000
+  },
+  fileFilter(req, file, ch) {
+    //if (!file.originalname.endsWith('.pdf')) {
+    if (!file.originalname.match(/\.(doc|docx)$/)) {
+      return ch(new Error('Please upload a Word document'))
+    }
+
+    ch(undefined, true)
+
+    //ch(new Error('File must be a PDF')) //it rejects upload and send back the error message
+    //ch(undefined, true) //it accepts the upload
+    //ch(undefined, false) //it rejects silently the upload
+  }
 })
 app.post('/upload', upload.single('upload'), (req, resp) => {
   resp.send()
-})*/
+})
 
 app.use(express.json())
 app.use(userRouter)
