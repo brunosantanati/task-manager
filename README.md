@@ -38,6 +38,7 @@ In the mongo/bin folder you can run these 2 commands below:
 <code>npm i bcryptjs@2.4.3</code>  
 <code>npm i jsonwebtoken@8.4.0</code>  
 <code>npm i multer@1.4.1</code>  
+<code>npm i sharp@0.21.1</code>
 <code>npm run dev</code>
 
 <code>node playground/promise-chaining.js</code>  
@@ -58,3 +59,4 @@ In the mongo/bin folder you can run these 2 commands below:
 [bcrypt.js](https://www.npmjs.com/package/bcryptjs)  
 [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken)  
 [multer (file upload)](https://www.npmjs.com/package/multer)  
+[sharp (image processing)](https://www.npmjs.com/package/sharp)  
