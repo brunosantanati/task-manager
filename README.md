@@ -45,6 +45,7 @@ In the mongo/bin folder you can run these 2 commands below:
 
 ## Course links
 
+[user avatar](http://localhost:3000/users/65a6baccff68b4d83dd7ec79/avatar)  
 [images for upload](https://links.mead.io/files) ([the same as this](https://files.mead.io/5c64e8f75ffe))    
 
 ## Mongoose links
