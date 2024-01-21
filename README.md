@@ -39,11 +39,12 @@ In the mongo/bin folder you can run these 2 commands below:
 <code>npm i jsonwebtoken@8.4.0</code>  
 <code>npm i multer@1.4.1</code>  
 <code>npm i sharp@0.21.1</code>  
+<code>npm i @sendgrid/mail@6.3.1</code>  
 <code>npm run dev</code>
 
 <code>node playground/promise-chaining.js</code>  
 <code>node playground/promise-chaining-2.js</code>  
-
+<code>node src/emails/account.js</code>  
 ## Course links
 
 [user avatar](http://localhost:3000/users/65a6baccff68b4d83dd7ec79/avatar)  
