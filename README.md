@@ -40,6 +40,7 @@ In the mongo/bin folder you can run these 2 commands below:
 <code>npm i multer@1.4.1</code>  
 <code>npm i sharp@0.21.1</code>  
 <code>npm i @sendgrid/mail@6.3.1</code>  
+<code>npm i env-cmd@8.0.2 --save-dev</code>  
 <code>npm run dev</code>
 
 <code>node playground/promise-chaining.js</code>  
@@ -61,3 +62,4 @@ In the mongo/bin folder you can run these 2 commands below:
 [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken)  
 [multer (file upload)](https://www.npmjs.com/package/multer)  
 [sharp (image processing)](https://www.npmjs.com/package/sharp)  
+[env-cmd](https://www.npmjs.com/package/env-cmd)  
