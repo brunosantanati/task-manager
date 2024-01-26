@@ -41,11 +41,13 @@ In the mongo/bin folder you can run these 2 commands below:
 <code>npm i sharp@0.21.1</code>  
 <code>npm i @sendgrid/mail@6.3.1</code>  
 <code>npm i env-cmd@8.0.2 --save-dev</code>  
-<code>npm run dev</code>
+<code>npm run dev</code>  
+<code>npm test</code>  
 
 <code>node playground/promise-chaining.js</code>  
 <code>node playground/promise-chaining-2.js</code>  
 <code>node src/emails/account.js</code>  
+
 ## Course links
 
 [user avatar](http://localhost:3000/users/65a6baccff68b4d83dd7ec79/avatar)  
@@ -55,6 +57,11 @@ In the mongo/bin folder you can run these 2 commands below:
 
 [Queries](https://mongoosejs.com/docs/queries.html)  
 [Middleware](https://mongoosejs.com/docs/middleware.html)  
+
+## Test links
+
+[Jest](https://jestjs.io/)  
+[Mocha](https://mochajs.org/)  
 
 ## Other links
 
