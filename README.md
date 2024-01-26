@@ -41,6 +41,7 @@ In the mongo/bin folder you can run these 2 commands below:
 <code>npm i sharp@0.21.1</code>  
 <code>npm i @sendgrid/mail@6.3.1</code>  
 <code>npm i env-cmd@8.0.2 --save-dev</code>  
+<code>npm i supertest@3.4.1 --save-dev</code>  
 <code>npm run dev</code>  
 <code>npm test</code>  
 
@@ -74,3 +75,4 @@ In the mongo/bin folder you can run these 2 commands below:
 [multer (file upload)](https://www.npmjs.com/package/multer)  
 [sharp (image processing)](https://www.npmjs.com/package/sharp)  
 [env-cmd](https://www.npmjs.com/package/env-cmd)  
+[supertest](https://www.npmjs.com/package/supertest)  
