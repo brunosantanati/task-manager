@@ -60,8 +60,9 @@ In the mongo/bin folder you can run these 2 commands below:
 
 ## Test links
 
-[Jest](https://jestjs.io/)  
 [Mocha](https://mochajs.org/)  
+[Jest](https://jestjs.io/)  
+[Jest - expect](https://jestjs.io/docs/expect)  
 
 ## Other links
 
