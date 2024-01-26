@@ -63,6 +63,7 @@ In the mongo/bin folder you can run these 2 commands below:
 [Mocha](https://mochajs.org/)  
 [Jest](https://jestjs.io/)  
 [Jest - expect](https://jestjs.io/docs/expect)  
+[Jest CLI Options](https://jestjs.io/docs/cli)  
 
 ## Other links
 
