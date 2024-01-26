@@ -64,6 +64,8 @@ In the mongo/bin folder you can run these 2 commands below:
 [Jest](https://jestjs.io/)  
 [Jest - expect](https://jestjs.io/docs/expect)  
 [Jest CLI Options](https://jestjs.io/docs/cli)  
+[Configuring Jest](https://jestjs.io/docs/configuration)  
+[Configuring Jest - testEnvironment](https://jestjs.io/docs/configuration#testenvironment-string)  
 
 ## Other links
 
