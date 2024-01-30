@@ -53,7 +53,7 @@ In the mongo/bin folder you can run these 2 commands below:
 
 [user avatar](http://localhost:3000/users/65a6baccff68b4d83dd7ec79/avatar)  
 [images for upload](https://links.mead.io/files) ([the same as this](https://files.mead.io/5c64e8f75ffe))    
-[Ideas for other tests to implement](links.mead.io/extratests) ([Gist link](https://gist.github.com/andrewjmead/988d5965c609a641202600b073e54266))  
+[Ideas for other tests to implement](http://links.mead.io/extratests) ([Gist link](https://gist.github.com/andrewjmead/988d5965c609a641202600b073e54266))  
 
 ## Mongoose links
 
