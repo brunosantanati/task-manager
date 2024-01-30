@@ -394,6 +394,25 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Get avatar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/users/65a6baccff68b4d83dd7ec79/avatar",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"users",
+						"65a6baccff68b4d83dd7ec79",
+						"avatar"
+					]
+				}
+			},
+			"response": []
 		}
 	],
 	"auth": {
